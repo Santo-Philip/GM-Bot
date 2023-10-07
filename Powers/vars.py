@@ -60,23 +60,23 @@ class Development:
 
     # Fill in these vars if you want to use Traditional method of deploying
     LOGGER = True
-    BOT_TOKEN = "YOUR BOT_TOKEN"
-    API_ID = 12345  # Your APP_ID from Telegram
-    API_HASH = "YOUR API HASH"  # Your APP_HASH from Telegram
-    OWNER_ID = 1344569458  # Your telegram user id defult to mine
-    MESSAGE_DUMP = -100845454887  # Your Private Group ID for logs
-    DEV_USERS = []
-    SUDO_USERS = []
-    WHITELIST_USERS = []
-    DB_URI = ""  # Your mongo DB URI
-    DB_NAME = ""  # Your DB name
+    BOT_TOKEN = "6019105479:AAEHrwEuCPTxNR1VCUh1JOJuAvqVzM32FYo"
+    API_ID = 19895724  # Your APP_ID from Telegram
+    API_HASH = "124f7fd46b505885a5c37d64e603568a"  # Your APP_HASH from Telegram
+    OWNER_ID = 1205330781  # Your telegram user id defult to mine
+    MESSAGE_DUMP = -1001306927879  # Your Private Group ID for logs
+    DEV_USERS = [1205330781]
+    SUDO_USERS = [1205330781]
+    WHITELIST_USERS = [1205330781]
+    DB_URI = "mongodb+srv://public:abishnoimf@cluster0.rqk6ihd.mongodb.net/?retryWrites=true&w=majority"  # Your mongo DB URI
+    DB_NAME = "queen"  # Your DB name
     NO_LOAD = []
     GENIUS_API_TOKEN = ""
     RMBG_API = ""
     AuDD_API = ""
     PREFIX_HANDLER = ["!", "/","$"]
-    SUPPORT_GROUP = "SUPPORT_GROUP"
-    SUPPORT_CHANNEL = "SUPPORT_CHANNEL"
+    SUPPORT_GROUP = "dangerbots"
+    SUPPORT_CHANNEL = "dangerbots"
     VERSION = "VERSION"
     TIME_ZONE = 'Asia/Kolkata'
     BDB_URI = ""
