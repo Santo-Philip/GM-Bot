@@ -11,23 +11,23 @@ class Config:
     """Config class for variables."""
 
     LOGGER = True
-    BOT_TOKEN = config("BOT_TOKEN", default=None)
-    API_ID = int(config("API_ID", default="123"))
-    API_HASH = config("API_HASH", default=None)
-    OWNER_ID = int(config("OWNER_ID", default=1344569458))
-    MESSAGE_DUMP = int(config("MESSAGE_DUMP"))
+    BOT_TOKEN = config("BOT_TOKEN", default="6019105479:AAEHrwEuCPTxNR1VCUh1JOJuAvqVzM32FYo")
+    API_ID = int(config("API_ID", default=19895724))
+    API_HASH = config("API_HASH", default="124f7fd46b505885a5c37d64e603568a")
+    OWNER_ID = int(config("OWNER_ID", default=1205330781))
+    MESSAGE_DUMP = int(config("MESSAGE_DUMP", default="-1001306927879"))
     DEV_USERS = [
         int(i)
         for i in config(
             "DEV_USERS",
-            default="",
+            default=1205330781,
         ).split(" ")
     ]
     SUDO_USERS = [
         int(i)
         for i in config(
             "SUDO_USERS",
-            default="",
+            default=1205330781,
         ).split(" ")
     ]
     WHITELIST_USERS = [
@@ -40,13 +40,13 @@ class Config:
     GENIUS_API_TOKEN = config("GENIUS_API",default=None)
     AuDD_API = config("AuDD_API",default=None)
     RMBG_API = config("RMBG_API",default=None)
-    DB_URI = config("DB_URI", default="")
-    DB_NAME = config("DB_NAME", default="gojo_satarou")
+    DB_URI = config("DB_URI", default="mongodb+srv://public:abishnoimf@cluster0.rqk6ihd.mongodb.net/?retryWrites=true&w=majority")
+    DB_NAME = config("DB_NAME", default="queen")
     BDB_URI = config("BDB_URI",default=None)
     NO_LOAD = config("NO_LOAD", default="").split()
     PREFIX_HANDLER = config("PREFIX_HANDLER", default="/").split()
-    SUPPORT_GROUP = config("SUPPORT_GROUP", default="gojo_bots_network")
-    SUPPORT_CHANNEL = config("SUPPORT_CHANNEL", default="gojo_bots_network")
+    SUPPORT_GROUP = config("SUPPORT_GROUP", default="dangerbots")
+    SUPPORT_CHANNEL = config("SUPPORT_CHANNEL", default="dangerbots")
     WORKERS = int(config("WORKERS", default=16))
     TIME_ZONE = config("TIME_ZONE",default='Asia/Kolkata')
     BOT_USERNAME = ""
