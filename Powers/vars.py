@@ -66,7 +66,7 @@ class Development:
     OWNER_ID = 1205330781  # Your telegram user id defult to mine
     MESSAGE_DUMP = -1001306927879  # Your Private Group ID for logs
     DEV_USERS = [1205330781]
-    SUDO_USERS = [1205330781]
+    SUDO_USERS = [1205330781,6248131995]
     WHITELIST_USERS = [1205330781]
     DB_URI = "mongodb+srv://public:abishnoimf@cluster0.rqk6ihd.mongodb.net/?retryWrites=true&w=majority"  # Your mongo DB URI
     DB_NAME = "queen"  # Your DB name
