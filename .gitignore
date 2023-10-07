@@ -4,7 +4,6 @@ Powers/config.py
 Powers/vars.py
 .vscode/
 postgres-data/
-*.env
 !sample.env
 logs/
 Powers/local_vars.py
