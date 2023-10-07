@@ -73,6 +73,7 @@ class Development:
     NO_LOAD = []
     GENIUS_API_TOKEN = ""
     RMBG_API = ""
+    AuDD_API = ""
     PREFIX_HANDLER = ["!", "/","$"]
     SUPPORT_GROUP = "SUPPORT_GROUP"
     SUPPORT_CHANNEL = "SUPPORT_CHANNEL"
