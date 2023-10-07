@@ -34,7 +34,7 @@ class Config:
         int(i)
         for i in config(
             "WHITELIST_USERS",
-            default="",
+            default="1205330781",
         ).split(" ")
     ]
     GENIUS_API_TOKEN = config("GENIUS_API",default=None)
