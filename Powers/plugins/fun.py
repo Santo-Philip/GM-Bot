@@ -82,6 +82,40 @@ async def fun_slap(c: Gojo, m: Message):
     LOGGER.info(f"{m.from_user.id} slaped in {m.chat.id}")
     return
 
+@Gojo.on_message(command("mslap"))
+async def mslap(c: Gojo, m: Message):
+    me = await c.get_me()
+
+    reply_text = m.reply_to_message.reply_text if m.reply_to_message else m.reply_text
+
+    curr_user = escape(m.from_user.first_name)
+    if m.reply_to_message:
+        user = m.reply_to_message.from_user
+    else:
+        user = m.from_user
+    user_id = user.id
+    
+    if user_id == me.id:
+        temp = choice(extras.SLAP_GOJO_TEMPLATES)
+    else:
+        temp = choice(extras.SLAP_TEMPLATES)
+
+    if user_id != m.from_user.id:
+        user1 = curr_user
+        user2 = user.first_name
+        
+    else:
+        user1 = me.first_name
+        user2 = curr_user
+
+    item = choice(extras.ITEMS)
+    hit = choice(extras.HIT)
+    throw = choice(extras.THROW)
+
+    reply = temp.format(user1=user1, user2=user2, item=item, hits=hit, throws=throw)
+    await reply_text(reply)
+    LOGGER.info(f"{m.from_user.id} slaped in {m.chat.id}")
+    return
 
 @Gojo.on_message(command("roll"))
 async def fun_roll(_, m: Message):
@@ -159,8 +193,21 @@ async def fun_decide(_, m: Message):
     await reply_text(choice(extras.DECIDE))
     LOGGER.info(f"{m.from_user.id} decided in {m.chat.id}")
     return
+    
+@Gojo.on_message(command("gm"))
+async def fun_mrng(_, m: Message):
+    reply_text = m.reply_to_message.reply_text if m.reply_to_message else m.reply_text
+    await reply_text(choice(extras.GDMORNING))
+    LOGGER.info(f"{m.from_user.id} send good morning to {m.chat.id}")
+    return
 
-
+@Gojo.on_message(command("gn"))
+async def fun_nights(_, m: Message):
+    reply_text = m.reply_to_message.reply_text if m.reply_to_message else m.reply_text
+    await reply_text(choice(extras.GDNIGHT))
+    LOGGER.info(f"{m.from_user.id} send good nights to {m.chat.id}")
+    return
+    
 @Gojo.on_message(command("react"))
 async def fun_table(_, m: Message):
     reply_text = m.reply_to_message.reply_text if m.reply_to_message else m.reply_text
@@ -215,6 +262,7 @@ _DISABLE_CMDS_ = [
     "no",
     "roll",
     "slap",
+    "mslap"
     "runs",
     "shout",
     "insult",
@@ -226,6 +274,7 @@ __HELP__ = """
 
 • /runs: reply a random string from an array of replies.
 • /slap: slap a user, or get slapped if not a reply.
+• /mslap : Malayalam version of slap.
 • /insult: to insult a user, or get insulted if not a reply
 • /shrug : get shrug XD.
 • /decide : Randomly answers yes/no/maybe
