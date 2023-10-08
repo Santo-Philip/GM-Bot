@@ -98,7 +98,7 @@ async def mslap(c: Gojo, m: Message):
     if user_id == me.id:
         temp = choice(extras.SLAP_GOJO_TEMPLATES)
     else:
-        temp = choice(extras.SLAP_TEMPLATES)
+        temp = choice(extras.MSLAP_TEMPLATES)
 
     if user_id != m.from_user.id:
         user1 = curr_user
