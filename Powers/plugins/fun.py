@@ -195,7 +195,7 @@ async def fun_decide(_, m: Message):
     LOGGER.info(f"{m.from_user.id} decided in {m.chat.id}")
     return
     
-@Gojo.on_message(regex("gm|Gm|Good Morning|gd mrng"))
+@Gojo.on_message(regex("(?!)gm|Good Morning|gd mrng"))
 async def fun_mrng(_, m: Message):
     reply_text = m.reply_to_message.reply_text if m.reply_to_message else m.reply_text
     await reply_text(choice(extras.GDMORNING))
