@@ -60,13 +60,6 @@ async def gen_start_kb(q: Message or CallbackQuery):
             ],
             [
                 (
-                    "Owner ❤️",
-                    Config.OWNER_ID,
-                    "user_id",
-                ),
-            ],
-            [
-                (
                     "Powered by",
                     f"https://{Config.SUPPORT_CHANNEL}.t.me",
                     "url",

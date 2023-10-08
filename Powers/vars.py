@@ -76,7 +76,7 @@ class Development:
     AuDD_API = ""
     PREFIX_HANDLER = ["!", "/","$"]
     SUPPORT_GROUP = "dangerbots"
-    SUPPORT_CHANNEL = "dangerbots"
+    SUPPORT_CHANNEL = "danger_bots"
     VERSION = "VERSION"
     TIME_ZONE = 'Asia/Kolkata'
     BDB_URI = ""
