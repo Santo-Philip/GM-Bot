@@ -2,6 +2,7 @@ from html import escape
 from random import choice
 
 from pyrogram import enums
+from pyrogram.filters import regex
 from pyrogram.errors import MessageTooLong
 from pyrogram.types import Message
 
@@ -194,14 +195,14 @@ async def fun_decide(_, m: Message):
     LOGGER.info(f"{m.from_user.id} decided in {m.chat.id}")
     return
     
-@Gojo.on_message(command("gm"))
+@Gojo.on_message(regex("gm"))
 async def fun_mrng(_, m: Message):
     reply_text = m.reply_to_message.reply_text if m.reply_to_message else m.reply_text
     await reply_text(choice(extras.GDMORNING))
     LOGGER.info(f"{m.from_user.id} send good morning to {m.chat.id}")
     return
 
-@Gojo.on_message(command("gn"))
+@Gojo.on_message(regex("gn"))
 async def fun_nights(_, m: Message):
     reply_text = m.reply_to_message.reply_text if m.reply_to_message else m.reply_text
     await reply_text(choice(extras.GDNIGHT))
