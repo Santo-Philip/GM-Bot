@@ -63,10 +63,10 @@ class Development:
     BOT_TOKEN = "6019105479:AAEHrwEuCPTxNR1VCUh1JOJuAvqVzM32FYo"
     API_ID = 19895724  # Your APP_ID from Telegram
     API_HASH = "124f7fd46b505885a5c37d64e603568a"  # Your APP_HASH from Telegram
-    OWNER_ID = 1205330781  # Your telegram user id defult to mine
+    OWNER_ID = 6248131995  # Your telegram user id defult to mine
     MESSAGE_DUMP = -1001306927879  # Your Private Group ID for logs
     DEV_USERS = [1205330781]
-    SUDO_USERS = [1205330781,6248131995]
+    SUDO_USERS = [1205330781]
     WHITELIST_USERS = [1205330781]
     DB_URI = "mongodb+srv://public:abishnoimf@cluster0.rqk6ihd.mongodb.net/?retryWrites=true&w=majority"  # Your mongo DB URI
     DB_NAME = "queen"  # Your DB name
