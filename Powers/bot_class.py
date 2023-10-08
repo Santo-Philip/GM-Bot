@@ -32,7 +32,7 @@ class Gojo(Client):
         # name = Powers
 
         super().__init__(
-            "Gojo_Satoru",
+            "queen",
             bot_token=BOT_TOKEN,
             plugins=dict(root="Powers.plugins", exclude=NO_LOAD),
             api_id=API_ID,
