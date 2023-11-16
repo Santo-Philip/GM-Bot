@@ -65,7 +65,7 @@ class Development:
     API_HASH = "124f7fd46b505885a5c37d64e603568a"  # Your APP_HASH from Telegram
     OWNER_ID = 6248131995  # Your telegram user id defult to mine
     MESSAGE_DUMP = -1001306927879  # Your Private Group ID for logs
-    DEV_USERS = [1205330781,6556349444]
+    DEV_USERS = [1205330781,6556349444,6970517110]
     SUDO_USERS = [1205330781]
     WHITELIST_USERS = [1205330781]
     DB_URI = "mongodb+srv://public:abishnoimf@cluster0.rqk6ihd.mongodb.net/?retryWrites=true&w=majority"  # Your mongo DB URI
